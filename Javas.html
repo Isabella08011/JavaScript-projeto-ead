@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando Texto com JavaScript</title>
+</head>
+<body>
+
+    <p id="meuParagrafo">clique no botão abaixo para alterar.</p>
+    <button onclick="alterarTexto()">Clique aqui</button>
+
+    <script>
+        function alterarTexto() {
+            let paragrafo = document.getElementById("meuParagrafo");
+            paragrafo.textContent = "Este texto foi alterado com sucesso!"; // Altera o texto do parágrafo
+        }
+    </script>
+
+</body>
+</html>
